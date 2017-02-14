@@ -1,0 +1,122 @@
+[27-Dec-2016 13:23:31 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 39
+[03-Jan-2017 05:38:15 UTC] PHP Fatal error:  Uncaught exception 'JSMin_UnterminatedStringException' with message 'JSMin: Unterminated String at byte 42419: 'assert\', \'clear\', \'count\', \'debug\', \'dir\', \'dirxml\', \'error\',' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php:211
+Stack trace:
+#0 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php(150): JSMin->action(1)
+#1 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php(84): JSMin->min()
+#2 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/autoptimizeScripts.php(237): JSMin::minify('\n%%INJECTLATER%...')
+#3 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/autoptimize.php(266): autoptimizeScripts->minify()
+#4 [internal function]: autoptimize_end_buffering('<!DOCTYPE html>...', 9)
+#5 /home/gnigatssmaj/public_html/masscomm/wp-includes/functions.php(3673): ob_end in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php on line 211
+[03-Jan-2017 05:38:15 UTC] PHP Fatal error:  Call to a member function get() on null in /home/gnigatssmaj/public_html/masscomm/wp-includes/cache.php on line 123
+[03-Jan-2017 05:38:26 UTC] PHP Fatal error:  Uncaught exception 'JSMin_UnterminatedStringException' with message 'JSMin: Unterminated String at byte 42419: 'assert\', \'clear\', \'count\', \'debug\', \'dir\', \'dirxml\', \'error\',' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php:211
+Stack trace:
+#0 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php(150): JSMin->action(1)
+#1 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php(84): JSMin->min()
+#2 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/autoptimizeScripts.php(237): JSMin::minify('\n%%INJECTLATER%...')
+#3 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/autoptimize.php(266): autoptimizeScripts->minify()
+#4 [internal function]: autoptimize_end_buffering('<!DOCTYPE html>...', 9)
+#5 /home/gnigatssmaj/public_html/masscomm/wp-includes/functions.php(3673): ob_end in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php on line 211
+[03-Jan-2017 05:38:26 UTC] PHP Fatal error:  Call to a member function get() on null in /home/gnigatssmaj/public_html/masscomm/wp-includes/cache.php on line 123
+[03-Jan-2017 05:39:02 UTC] PHP Fatal error:  Uncaught exception 'JSMin_UnterminatedStringException' with message 'JSMin: Unterminated String at byte 42447: 'assert\\\', \\\'clear\\\', \\\'count\\\', \\\'debug\\\', \\\'dir\\\', \\\'dirxml\\\', \\\'error\\\',' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php:211
+Stack trace:
+#0 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php(150): JSMin->action(1)
+#1 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php(84): JSMin->min()
+#2 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/autoptimizeScripts.php(237): JSMin::minify('\n%%INJECTLATER%...')
+#3 /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/autoptimize.php(266): autoptimizeScripts->minify()
+#4 [internal function]: autoptimize_end_buffering('<!DOCTYPE html>...', 9)
+#5 /home/gnigatssmaj/public_html/masscomm/wp-includes/f in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/autoptimize/classes/external/php/minify-2.3.1-jsmin.php on line 211
+[03-Jan-2017 05:39:02 UTC] PHP Fatal error:  Call to a member function get() on null in /home/gnigatssmaj/public_html/masscomm/wp-includes/cache.php on line 123
+[07-Jan-2017 15:56:40 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 42
+[07-Jan-2017 16:24:56 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 62
+[07-Jan-2017 16:28:35 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 62
+[07-Jan-2017 16:28:39 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 62
+[07-Jan-2017 16:38:36 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 71
+[07-Jan-2017 16:38:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 71
+[08-Jan-2017 05:22:45 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 154
+[08-Jan-2017 05:22:56 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 154
+[08-Jan-2017 05:24:12 UTC] PHP Warning:  Illegal string offset 'value' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 143
+[08-Jan-2017 05:24:12 UTC] PHP Warning:  Illegal string offset 'value' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 147
+[08-Jan-2017 05:24:12 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 154
+[08-Jan-2017 05:27:05 UTC] PHP Warning:  Illegal string offset 'value' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 143
+[08-Jan-2017 05:27:05 UTC] PHP Warning:  Illegal string offset 'value' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 147
+[08-Jan-2017 05:27:05 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 154
+[08-Jan-2017 05:28:47 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 154
+[08-Jan-2017 05:30:14 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 154
+[08-Jan-2017 05:31:31 UTC] PHP Catchable fatal error:  Object of class WP_Query could not be converted to string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 155
+[08-Jan-2017 05:34:50 UTC] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/footer.php on line 147
+[08-Jan-2017 17:10:03 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 17
+[08-Jan-2017 18:46:05 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 61
+[09-Jan-2017 19:31:22 UTC] PHP Parse error:  syntax error, unexpected '<', expecting identifier (T_STRING) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 69
+[09-Jan-2017 19:31:51 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 69
+[10-Jan-2017 11:17:56 UTC] PHP Parse error:  syntax error, unexpected '' . '' (T_CONSTANT_ENCAPSED_STRING) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 100
+[10-Jan-2017 11:18:23 UTC] PHP Parse error:  syntax error, unexpected 'section_description_color_alum' (T_STRING) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 100
+[10-Jan-2017 11:18:28 UTC] PHP Parse error:  syntax error, unexpected 'section_description_color_alum' (T_STRING) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 100
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:25 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:16:51 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 426
+[25-Jan-2017 06:30:50 UTC] PHP Warning:  Division by zero in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 443
+[30-Jan-2017 00:14:18 UTC] PHP Fatal error:  Unsupported operand types in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 357
+[30-Jan-2017 01:17:55 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:18:45 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:18:49 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:18:52 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:19:12 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:19:17 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:19:19 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:19:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:20:37 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 01:20:40 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/front-page.php on line 388
+[30-Jan-2017 05:36:19 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-event.php on line 275
+[30-Jan-2017 06:07:19 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-event.php on line 283
+[30-Jan-2017 06:41:44 UTC] PHP Warning:  Illegal string offset 'pending' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/ewww-image-optimizer/common.php on line 2668
+[30-Jan-2017 06:41:44 UTC] PHP Warning:  Illegal string offset 'id' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/ewww-image-optimizer/common.php on line 2675
+[30-Jan-2017 06:41:44 UTC] PHP Warning:  Illegal string offset 'pending' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/ewww-image-optimizer/common.php on line 2668
+[30-Jan-2017 06:41:44 UTC] PHP Warning:  Illegal string offset 'id' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/ewww-image-optimizer/common.php on line 2675
+[30-Jan-2017 06:41:44 UTC] PHP Warning:  Illegal string offset 'pending' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/ewww-image-optimizer/common.php on line 2668
+[30-Jan-2017 06:41:44 UTC] PHP Warning:  Illegal string offset 'id' in /home/gnigatssmaj/public_html/masscomm/wp-content/plugins/ewww-image-optimizer/common.php on line 2675
+[31-Jan-2017 02:10:03 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/gnigatssmaj/public_html/masscomm/wp-includes/formatting.php on line 548
+[31-Jan-2017 02:10:27 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/gnigatssmaj/public_html/masscomm/wp-includes/post.php on line 1943
+[01-Feb-2017 15:10:36 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/gnigatssmaj/public_html/masscomm/wp-includes/formatting.php on line 809
+[01-Feb-2017 22:03:11 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[01-Feb-2017 22:03:39 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[01-Feb-2017 22:03:40 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[01-Feb-2017 22:03:41 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[01-Feb-2017 22:03:41 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[01-Feb-2017 22:03:43 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[01-Feb-2017 22:04:40 UTC] PHP Fatal error:  Call to undefined function id_the_body() in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/header.php on line 70
+[02-Feb-2017 05:43:50 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-personnel.php on line 50
+[02-Feb-2017 05:44:27 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-personnel.php on line 50
+[02-Feb-2017 06:53:15 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/page-directory.php on line 172
+[02-Feb-2017 08:10:11 UTC] PHP Fatal error:  Call to a member function have_posts() on string in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/taxonomy-directory.php on line 73
+[02-Feb-2017 08:34:59 UTC] PHP Parse error:  syntax error, unexpected ''</span>'' (T_CONSTANT_ENCAPSED_STRING) in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/page-directory.php on line 177
+[02-Feb-2017 08:35:33 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/page-directory.php on line 177
+[02-Feb-2017 08:57:52 UTC] PHP Fatal error:  Cannot use object of type WP_Term as array in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/page-directory.php on line 177
+[02-Feb-2017 16:58:19 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-faculty.php on line 52
+[02-Feb-2017 17:59:15 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-faculty.php on line 52
+[02-Feb-2017 18:07:54 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/gnigatssmaj/public_html/masscomm/wp-content/themes/masscomm/single-faculty.php on line 52

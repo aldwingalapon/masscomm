@@ -1,0 +1,149 @@
+@media only screen and (max-width:7680px){
+	header#main_header{}
+	header#main_header.scrolled{position:fixed;}
+
+	header#main_header .bottom_header #primary_navigation.menu-on{padding: 2.5rem 0;}
+	header#main_header .bottom_header #primary_navigation ul > li > a{font-size:14px;line-height:1.5;padding:0.45rem 0.75rem;}
+	.c-hamburger{display:none;}
+
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption{width:40%;bottom:16%;padding:1.5rem;}
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption h4{font-size:22px;}
+	#hero-owl-carousel-container #hero-owl-carousel .owl-controls .owl-nav{display:block;}
+
+	.main_content#frontpage .section.gallery .ngg-galleryoverview .ngg-gallery-thumbnail-box{width:25% !important;}
+
+	.main_content#frontpage .section.alumni_stories #alumni_stories_list .alumni_story_item .story_content{margin-bottom:1rem;padding:0 1rem;}
+	.main_content#frontpage .section.alumni_stories #alumni_stories_list .alumni_story_item .story_content.story_content_first{padding:0 2rem 0 0;}
+	.main_content#frontpage .section.alumni_stories #alumni_stories_list .alumni_story_item .story_content.story_content_last{padding:0 0 0 2rem;}
+
+	.main_content .inner_content .article{padding-right:3rem;}
+
+	.main_content#single-event .inner_content .article .event-details>span.speaker{float:left;width:50%;}
+
+	.main_content#not-found-page .inner_content .article .not-found-panel{margin: 40px auto; padding: 54px 122px;}
+	.main_content .inner_content .article .ngg-album-compact{width:33.333%;}
+
+	footer#main_footer .skew.after:after{display:block;}
+	footer#main_footer #top_footer .footer-banner .caption{top: 12.5%;width:45%;padding: 1.5rem 2rem;}
+	#footer-owl-carousel-container #footer-owl-carousel .owl-controls .owl-nav .owl-next{left: 54%;}
+	footer#main_footer #top_footer .top-content{position:absolute;}
+	footer#main_footer #top_footer .top-content .top-menu{ padding: 2rem 0 1.75rem; -webkit-box-shadow: 8px 0 4px -3px rgba(0,0,0,0.6);-moz-box-shadow: 8px 0 4px -3px rgba(0,0,0,0.6);-o-box-shadow: 8px 0 4px -3px rgba(0,0,0,0.6);box-shadow: 8px 0 4px -3px rgba(0,0,0,0.6);}
+
+	footer#main_footer #top_footer .events .info-slider .owl-item .caption h4, footer#main_footer #top_footer .events .info-slider:before{font-size:15px;}
+}
+@media only screen and (max-width:1920px){
+}
+@media only screen and (max-width:1768px){
+}
+@media only screen and (max-width:1680px){
+}
+@media only screen and (max-width:1600px){
+}
+@media only screen and (max-width:1440px){
+}
+@media only screen and (max-width:1366px){
+}
+@media only screen and (max-width:1280px){
+}
+@media only screen and (max-width:1024px){
+	header#main_header .bottom_header #primary_navigation ul > li > a{font-size:13px;padding:0.25rem;}
+
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption{width:84%;}
+
+	footer#main_footer #top_footer .events .event-slider .owl-item .event-item .col-md-8{width:100% !important;}
+	footer#main_footer #top_footer .events .event-slider .owl-item .event-item .col-md-4{display:none !important;}
+	footer#main_footer #top_footer .events .info-slider .owl-item .caption h4, footer#main_footer #top_footer .events .info-slider:before{font-size:14px;}
+
+	footer#main_footer #top_footer .footer-banner .caption{top: 9.5%;width:65%;}
+	#footer-owl-carousel-container #footer-owl-carousel .owl-controls .owl-nav .owl-next{left: 73.5%;}
+
+}
+@media only screen and (max-width:1000px){
+	header#main_header.scrolled{position:relative;}
+	header#main_header .bottom_header #primary_navigation ul > li > a {padding: 0.5rem 0.25rem;}
+
+	.clearfix_1000{display:block;clear:both;}
+	.c-hamburger{display:inline-block;vertical-align: middle;}
+
+	header#main_header .bottom_header #primary_navigation.menu-on{padding: 1.9rem 0 2.5rem;}
+
+	.main_content#frontpage .section.gallery .ngg-galleryoverview .ngg-gallery-thumbnail-box{width:50% !important;}
+
+	.main_content#frontpage .section.quick_links #quick_link_list .last_links{clear:both;}
+	.main_content#frontpage .section.alumni_stories #alumni_stories_list .alumni_story_item .story_content, .main_content#frontpage .section.alumni_stories #alumni_stories_list .alumni_story_item .story_content.story_content_first, .main_content#frontpage .section.alumni_stories #alumni_stories_list .alumni_story_item .story_content.story_content_last{margin-bottom:2rem;padding:0 1rem;}
+
+	.main_content .inner_content .article{padding-right:15px;}
+	.main_content#not-found-page .inner_content .article .not-found-panel{margin: 20px; padding: 30px 90px;}
+
+	.main_content .inner_content .article .ngg-album-compact{width:50%;}
+
+	footer#main_footer .skew.after:after{display:none;}
+	footer#main_footer #top_footer .events .info-slider{display:none !important;}
+	footer#main_footer #top_footer .top-content{position:relative;}
+	footer#main_footer #top_footer .top-content .top-menu{ padding: 2rem 0 0.75rem; -webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;box-shadow: none;}
+	#footer-owl-carousel-container #footer-owl-carousel .owl-controls .owl-nav .owl-next{left: 73.25%;}
+
+}
+@media only screen and (max-width:800px){
+	.back_to_top-button{right:1.5rem !important;}
+	#footer-owl-carousel-container #footer-owl-carousel .owl-controls .owl-nav .owl-next{left: 73%;}
+}
+@media only screen and (max-width:768px){
+
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption{padding:1rem 1.25rem;}
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption h4{font-size:18px;}
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption p{display:none !important;}
+
+	.main_content#single-event .inner_content .article .event-details>span.speaker{float:none;width:100%;}
+
+	#footer-owl-carousel-container #footer-owl-carousel .owl-controls .owl-nav{display:none !important;}
+}
+@media only screen and (max-width:640px){
+	.main_content#frontpage .section.quick_links #quick_link_list{text-align:center;}
+
+	.main_content#frontpage .section.event_links .link-item{width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
+
+	footer#main_footer #top_footer .top-content .top-menu{text-align:center;}
+	footer#main_footer #top_footer .top-content .top-menu h4{display:block !important;margin:0.5rem auto;}
+	footer#main_footer #top_footer .top-content .top-menu h4:after{left:0;right:0;margin:0.1rem auto;}
+	footer#main_footer #bottom_footer .bottom-content{text-align:center;}
+}
+@media only screen and (max-width:603px){
+	header#main_header .top_header .utility ul li:not(:last-child):not(.search-menu-item){/*display:none;*/}
+
+	.main_content#not-found-page .inner_content .article .not-found-panel{margin: 10px 20px; padding: 30px 55px;}
+
+	footer#main_footer #top_footer .footer-banner .caption{width:85%;}
+	footer#main_footer #top_footer .footer-banner .caption h4{font-size:13px !important;}
+	footer#main_footer #top_footer .footer-banner .caption p{font-size:13px !important;}
+}
+@media only screen and (max-width:600px){
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption{bottom:22%;}
+	.main_content#frontpage .section.hero #hero-owl-carousel-container .hero-item .caption h4{font-size:16px !important;}
+	.clearfix_1000{display:none;}
+}
+@media only screen and (max-width:533px){
+	header#main_header .middle_header .logo{}
+	header#main_header .middle_header .logo img{max-width:80%;}
+
+	#hero-owl-carousel-container #hero-owl-carousel .owl-controls .owl-nav{display:none;}
+}	
+@media only screen and (max-width:532px){
+	.main_content#frontpage .section.gallery .ngg-galleryoverview .ngg-gallery-thumbnail-box{width:100% !important;}
+
+	footer#main_footer #top_footer .footer-banner .caption p{display:none !important;}
+	footer#main_footer #top_footer .footer-banner .caption{top: 65%;}
+}
+@media only screen and (max-width:414px){
+	.main_content .inner_content .article .ngg-album-compact{width:100%;}
+
+	footer#main_footer #top_footer .footer-banner .caption{top: auto; bottom: 10%;padding: 1rem 1.5rem;}
+}
+@media only screen and (max-width:375px){
+}
+@media only screen and (max-width:360px){
+}
+@media only screen and (max-width:320px){
+}
+@media only screen and (max-width:240px){
+}
