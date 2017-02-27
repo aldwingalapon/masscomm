@@ -6,6 +6,8 @@ function __smReady(sumome) {
     jQuery('.sumome-wp-dash-logged-in').addClass('status-logged-in');
     jQuery('.sumome-wp-dash-logged-out').removeClass('status-logged-out');
     jQuery('.sumome-wp-dash-logged-out').addClass('status-logged-in');
+
+    getLoadInformation();
   });
 
   //auto populate form when clicking badge to login
@@ -63,6 +65,16 @@ function __smReady(sumome) {
 
     });
   }
+
+  function get_sumome_sandbox() {
+    window.sumome = sumome;
+    var sandbox = new sumome.core.Sandbox(sumome.core, 'wordpress', {}, 'wordpress');
+    return sandbox.properties;
+  }
+
+  jQuery(document).on('getSandbox',function () {
+    return get_sumome_sandbox();
+  });
 
   jQuery(document).on('click', '.sumo-notifications',function () {
     sumome.core.emit('startApp', 'ee27a0af-9947-40c9-8eab-0ab6a4f7a9c1');
@@ -129,7 +141,7 @@ var setCookie = function(cname, cvalue, exdays) {
 }
 
 function sumome_login_refresh() {
-  document.location.href='<?php print admin_url('admin.php?page=sumome')?>';
+  document.location.href='<?php print admin_url('admin.php?page=sumo')?>';
 }
 
 </script>

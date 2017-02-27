@@ -27,10 +27,10 @@ $itemArray['About']['data-name']="sumome-control-about";
 $itemArray['About']['class']="sumome-tile-about sumome-popup-no-dim";
 $itemArray['About']['columns']=1;
 
-$itemArray['SumoMe Settings']['data-name']="sumome-control-settings";
-$itemArray['SumoMe Settings']['class']="sumo-settings";
-$itemArray['SumoMe Settings']['data-type']="sumome-app";
-$itemArray['SumoMe Settings']['columns']=1;
+$itemArray['Sumo Settings']['data-name']="sumome-control-settings";
+$itemArray['Sumo Settings']['class']="sumo-settings";
+$itemArray['Sumo Settings']['data-type']="sumome-app";
+$itemArray['Sumo Settings']['columns']=1;
 ?>
 <div class="sumome-plugin-main-wrapper">
   <div class="sumome-logged-in-container">
@@ -69,7 +69,7 @@ $itemArray['SumoMe Settings']['columns']=1;
           <div class="list-bullet">
             <h4 class="list-number-title">Leave a Review!</h4>
           </div>
-          <div class="sumome-instructions">We will love you forever if you leave an <a href="https://wordpress.org/support/view/plugin-reviews/sumome" target="_blank">honest review here</a> of the SumoMe plugin.</div>
+          <div class="sumome-instructions">We will love you forever if you leave an <a href="https://wordpress.org/support/view/plugin-reviews/sumome" target="_blank">honest review here</a> of the Sumo plugin.</div>
         </div>
       </div>
 
@@ -79,19 +79,12 @@ $itemArray['SumoMe Settings']['columns']=1;
           <h4 class="list-number-title">Need Help?</h4>
           <div class="sumome-help">
             <span>Take a look at our <a target="_blank" href="https://help.sumome.com/">help page</a> to see our frequently answered</span>
-            <span>questions or <a target="_blank" href="https://help.sumome.com/customer/portal/emails/new">send us a message</a> and we will get back to you asap.</span>
+            <span>questions or <a target="_blank" href="https://help.sumome.com/hc/en-us/requests/new">send us a message</a> and we will get back to you asap.</span>
           </div>
         </div>
       </div>
 
-      <!-- Site ID -->
-      <div class="row">
-        <div class="large-12 columns footer footer">
-          <div class="sumome-plugin-center">Need to restore an existing account?
-            <div class="sumome-plugin-linkalike sumome-link-button sumome-tile-advanced-settings item-tile sumome-popup-no-dim" data-name="sumome-control-advanced-settings" data-title="">Click here</div>
-          </div>
-        </div>
-      </div>
+
 
   </div>
 </div>
@@ -100,10 +93,5 @@ $itemArray['SumoMe Settings']['columns']=1;
 <?php
   include_once "popup.php";
 ?>
-<script>
-jQuery(document).ready(function() {
-  getLoadInformation();
-})
 
-</script>
 

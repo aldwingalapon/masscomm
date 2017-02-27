@@ -87,7 +87,7 @@ jQuery(document).ready(function() {
       }
 
       if (dataName=="sumome-control-advanced-settings") {
-		    document.location.href='<?php print admin_url('admin.php?page=siteID')?>';
+		    document.location.href='<?php print admin_url('admin.php?page=sumo-siteID')?>';
       } else if (jQuery(this).hasClass('sumome-popup-iframe')) {
         var popupHref=jQuery(this).data('href');
         if (jQuery(this).attr('href')) popupHref=jQuery(this).attr('href');
@@ -101,11 +101,11 @@ jQuery(document).ready(function() {
         return false;
 
       } else if (dataName=="sumome-control-about") {
-        window.open('https://sumome.com/about?src=wpplugin');
+        window.open('https://sumo.com/about?src=wpplugin');
       } else if (dataName=="sumome-control-account-settings") {
-        window.open('https://sumome.com/account');
+        window.open('https://sumo.com/account');
       } else if (dataName=="sumome-control-statistics") {
-        document.location.href='<?php print admin_url('admin.php?page=statistics')?>';
+        document.location.href='<?php print admin_url('admin.php?page=sumo-statistics')?>';
       } else {
         jQuery('.'+dataName).click();
       }
@@ -136,41 +136,15 @@ jQuery(document).ready(function() {
 
 });
 
-function getLoadInformation() {
-  if (getCookie('__smUser')) {
-     var data = {
-           href: window.location.href || null,
-           ref: document.referrer || null
-     };
-     data.site_id='<?php echo get_option('sumome_site_id')?>';
-     jQuery.ajax({
-        url: 'https://sumome.com/api/load',
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function (req) {
-          var token = getCookie('__smToken');
-          if (token) {
-            req.setRequestHeader('X-Sumo-Auth', token);
-          }
+function getLoadInformation(specificRequest) {
+  data=jQuery(document).triggerHandler('getSandbox');
 
-        },
-        xhrFields: {
-          withCredentials: false
-        },
-        crossDomain: true,
-        data: data,
-        success: function(data) {
-            if (data.login==false) {
-              sumo_logout();
-            } else {
-              jQuery('.notification-count').remove();
-              if (data.unreadNotificationCount>0) {
-                jQuery('.sumo-notifications .item-tile-title').append('<div class="notification-count">'+data.unreadNotificationCount+'</div>');
-              }
-            }
-        }
-    });
+  //notifications
+  jQuery('.notification-count').remove();
+  if (data.unreadNotificationCount!=null && data.unreadNotificationCount>0) {
+    jQuery('.sumo-notifications .item-tile-title').append('<div class="notification-count">'+data.unreadNotificationCount+'</div>');
   }
+
 }
 
 jQuery(window).load(function() {
