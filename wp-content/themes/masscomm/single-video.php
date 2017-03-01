@@ -1,12 +1,12 @@
 <?php  
 /**
- * Template Name: Single News
+ * Template Name: Single Video
  *
  */
 ?>
 <?php get_header(); set_upcmc_post_views(get_the_ID()); ?>
 <?php if (have_posts()) : ?>
-	<div class="main_content" id="single-news">
+	<div class="main_content" id="single-video">
 		<div class="page-breadcrumb">
 			<div class="container">
 				<div class="row">
@@ -22,7 +22,7 @@
 				<div class="container">
 					<div class="row">
 						<?php
-							$post_object = get_field('news_page', 'option');
+							$post_object = get_field('videos_page', 'option');
 							if( $post_object ){
 								$post = $post_object;
 								setup_postdata( $post ); 
@@ -33,9 +33,9 @@
 						?>
 						<div class="col-md-8 article">
 							<?php if(get_field('hide_content_title', $the_ID)) { ?>
-								<?php echo ( get_field('show_content_title', $the_ID ) ? '<h2 class="article-title"><span class="pre-title"><a href="' . $news_page_link . '" title="' . $news_page_title . '">' . $news_page_title . '</a></span>' . get_field('content_title', $the_ID ) . '<span class="edit-link">' . edit_post_link('Edit this article', ' | ', '') . ' | <a href="' . add_query_arg(array('post_type'=>'news'),admin_url('post-new.php')) . ' title="Add new article" class="post-add-link">Add new article</a></span></h2>' : '' ); ?>
+								<?php echo ( get_field('show_content_title', $the_ID ) ? '<h2 class="article-title"><span class="pre-title"><a href="' . $news_page_link . '" title="' . $news_page_title . '">' . $news_page_title . '</a></span>' . get_field('content_title', $the_ID ) . '<span class="edit-link">' . edit_post_link('Edit this video', ' | ', '') . ' | <a href="' . add_query_arg(array('post_type'=>'video'),admin_url('post-new.php')) . ' title="Add new video" class="post-add-link">Add new video</a></span></h2>' : '' ); ?>
 							<?php } else { ?>
-								<h2 class="article-title"><span class="pre-title"><a href="<?php echo $news_page_link; ?>" title="<?php echo $news_page_title; ?>"><?php echo $news_page_title; ?></a></span><?php echo get_the_title(); ?><span class="edit-link"><?php edit_post_link('Edit this article', ' | ', ''); ?><?php echo ' | <a href="' . add_query_arg(array('post_type'=>'news'),admin_url('post-new.php')) . '" title="Add new article" class="post-add-link">Add new article</a>'; ?></span></h2>
+								<h2 class="article-title"><span class="pre-title"><a href="<?php echo $news_page_link; ?>" title="<?php echo $news_page_title; ?>"><?php echo $news_page_title; ?></a></span><?php echo get_the_title(); ?><span class="edit-link"><?php edit_post_link('Edit this video', ' | ', ''); ?><?php echo ' | <a href="' . add_query_arg(array('post_type'=>'video'),admin_url('post-new.php')) . '" title="Add new video" class="post-add-link">Add new video</a>'; ?></span></h2>
 							<?php } ?>
 							<div class="post-data">
 								<span class="post-details">
@@ -84,7 +84,18 @@
 									<span class="email social"><a href="mailto:?subject=<?php echo get_permalink($id); ?>" title="" rel="nofollow" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');return false;"></a></span>
 								</span>
 							</div>
-							<?php the_content(); ?>
+							<?php 
+								$video_description = get_field('video_description', $the_ID);
+								$youtube_video_id = get_field('youtube_video_id', $the_ID);
+								$video_link = 'https://www.youtube.com/watch?v='. get_field('youtube_video_id', $the_ID);
+								$video_image_placeholder = 'http://i3.ytimg.com/vi/' . get_field('youtube_video_id', $the_ID) . '/0.jpg';
+								$featured = get_field('featured', $the_ID);
+							?>	
+								<div class="video-container" style="margin-bottom:20px;">
+										 <iframe src="https://www.youtube.com/embed/<?php echo $youtube_video_id;?>" frameborder="0" width="560" height="315"></iframe>
+								</div>
+							<?php echo ($video_description); ?>
+							
 							<div class="article-footer">
 								<p class="category-post"><b>Posted in</b>: <?php the_category( '&bull;' ); ?></p>
 								<p class="category-post"><?php the_tags( '<b>Tags</b>: ', ' • ', ' ' ); ?></p>
@@ -97,7 +108,7 @@
 										dynamic_sidebar( get_sub_field('sidebar_widget', $the_ID ) );
 									endwhile;
 								else :
-										dynamic_sidebar('Default News Sidebar');
+										dynamic_sidebar('Default Sidebar');
 								endif;
 							?>					
 						</div>
