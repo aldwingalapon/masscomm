@@ -36,7 +36,7 @@
 									$wp_query = new WP_Query();
 									$args = array(
 										'paged' => $paged,
-										'posts_per_page' => 10,
+										'posts_per_page' => 12,
 										'post_type' =>	'press_release',
 										'status'	=>	'publish',
 										'orderby'	=>	'date',
@@ -62,6 +62,45 @@
 											</div>
 											<div class="press_release_content_title">
 												<h4><a href="<?php echo get_permalink($id); ?>" title="<?php echo get_the_title(); ?>" <?php echo (get_field('section_title_color_press_release_and_articles_section', 'option') ? ' style="color:' . get_field('section_title_color_press_release_and_articles_section', 'option') . ';"' : ''); ?>><?php echo get_the_title(); ?></a></h4>
+												<div class="post-data">
+													<span class="post-details">
+														<?php the_time('j F Y') ?> / <?php $link = get_permalink(get_the_ID()); echo FacebookShareCount::get_share_count($link); ?> Shares /  by 
+														<?php
+															if( have_rows('authors', $the_ID ) ):
+																while ( have_rows('authors', $the_ID ) ) : the_row();
+																	$author_name = get_sub_field('author_name', $the_ID );
+																	$author_designation = get_sub_field('author_designation', $the_ID );
+																	$author_photo = get_sub_field('author_photo', $the_ID );
+																	$author_link = get_sub_field('author_link', $the_ID );
+																	$author_link_target = get_sub_field('author_link_target', $the_ID );
+																	if($author_link){
+																		echo ('<a href="' . $author_link . '" target="' . $author_link_target . '" title="' . $author_name . '">' . $author_name . '</a>');
+																	}else{
+																		echo ($author_name);
+																	}
+																endwhile;
+															else :
+																	the_author_posts_link();
+															endif;
+														?>					
+														<?php
+															if( have_rows('links', $the_ID ) ): echo (' (');
+																while ( have_rows('links', $the_ID ) ) : the_row();
+																	$link_name = get_sub_field('link_name', $the_ID );
+																	$link_url = get_sub_field('link_url', $the_ID );
+																	$link_target = get_sub_field('link_target', $the_ID );
+																	if($link_url){
+																		echo ('<a href="' . $link_url . '" target="' . $link_target . '" title="' . $link_name . '">' . $link_name . '</a>');
+																	}else{
+																		echo ($link_name);
+																	}
+																endwhile;
+																echo (')');
+															else :
+															endif;
+														?>					
+													</span>
+												</div>												
 											</div>
 											<div class="press_release_content_excerpt">
 												<?php echo '<p class="excerpt" ' . (get_field('section_title_color_press_release_and_articles_section', 'option') ? ' style="color:' . get_field('section_title_color_press_release_and_articles_section', 'option') . ';"' : '') . '>'.limit_words(get_the_excerpt(), '15').' ... <br/> <a href="' . get_permalink($id) . '" title="' . get_the_title() . '" class="read-more">Read more</a></p>'; ?>

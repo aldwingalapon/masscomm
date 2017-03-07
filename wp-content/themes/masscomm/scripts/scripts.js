@@ -109,6 +109,16 @@ $(document).ready(function(){
 			});
 
 			$(".main_content#news-page .inner_content .article .news_item .news_content").height(maxHeight6);
+			
+			$(".main_content#press_release-page .inner_content .article .press_release_item .press_release_content").css('height', 'auto');
+
+			var maxHeight7 = 0;
+
+			$(".main_content#press_release-page .inner_content .article .press_release_item .press_release_content").each(function(){
+			   if ($(this).height() > maxHeight7) { maxHeight7 = $(this).height(); }
+			});
+
+			$(".main_content#press_release-page .inner_content .article .press_release_item .press_release_content").height(maxHeight7);
 		}
 	});
 	

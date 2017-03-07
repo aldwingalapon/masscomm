@@ -4,7 +4,9 @@
  *
  */
 ?>
+
 <?php get_header(); set_upcmc_post_views(get_the_ID()); ?>
+
 <?php if (have_posts()) : ?>
 	<div class="main_content" id="single-video">
 		<div class="page-breadcrumb">
@@ -33,7 +35,7 @@
 						?>
 						<div class="col-md-8 article">
 							<?php if(get_field('hide_content_title', $the_ID)) { ?>
-								<?php echo ( get_field('show_content_title', $the_ID ) ? '<h2 class="article-title"><span class="pre-title"><a href="' . $news_page_link . '" title="' . $news_page_title . '">' . $news_page_title . '</a></span>' . get_field('content_title', $the_ID ) . '<span class="edit-link">' . edit_post_link('Edit this video', ' | ', '') . ' | <a href="' . add_query_arg(array('post_type'=>'video'),admin_url('post-new.php')) . ' title="Add new video" class="post-add-link">Add new video</a></span></h2>' : '' ); ?>
+								<?php echo ( get_field('show_content_title', $the_ID ) ? '<h2 class="article-title"><span class="pre-title"><a href="' . $news_page_link . '" title="' . $news_page_title . '">' . $news_page_title . '</a></span>' . get_field('content_title', $the_ID ) . '<span class="edit-link">' . '<a href="' . get_edit_post_link($the_ID) . '" title="Edit this video" class="post-edit-link">Edit this video</a>' . ' | <a href="' . add_query_arg(array('post_type'=>'video'),admin_url('post-new.php')) . '" title="Add new video" class="post-add-link">Add new video</a></span></h2>' : '' ); ?>
 							<?php } else { ?>
 								<h2 class="article-title"><span class="pre-title"><a href="<?php echo $news_page_link; ?>" title="<?php echo $news_page_title; ?>"><?php echo $news_page_title; ?></a></span><?php echo get_the_title(); ?><span class="edit-link"><?php edit_post_link('Edit this video', ' | ', ''); ?><?php echo ' | <a href="' . add_query_arg(array('post_type'=>'video'),admin_url('post-new.php')) . '" title="Add new video" class="post-add-link">Add new video</a>'; ?></span></h2>
 							<?php } ?>
@@ -119,7 +121,9 @@
 			<?php endwhile; ?>
 		</div>
 	</div>
+
 <?php else : ?>
 <?php endif; ?>
+
 <?php wp_reset_query(); ?>
 <?php get_footer(); ?>

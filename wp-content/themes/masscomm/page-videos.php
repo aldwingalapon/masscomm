@@ -77,7 +77,10 @@
 										</div>
 									<?php endwhile; ?>
 
-									<?php if(function_exists('wp_page_numbers')) { wp_page_numbers(); } ?>
+									<div class="clearfix"></div>
+									<div class="col-md-12">
+										<?php  if(function_exists('wp_page_numbers')) { wp_page_numbers(); } ?>
+									</div>
 								<?php else : endif; $wp_query = null; $wp_query = $videoItems; ?>							
 							
 								<div class="clearfix"></div>

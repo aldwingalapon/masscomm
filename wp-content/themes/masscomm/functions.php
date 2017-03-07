@@ -215,7 +215,7 @@ function the_breadcrumbs() {
 				wp_reset_postdata();
 			}
 			echo "<span class='sep'></span> <span class='single-video-".$post->ID."'>".get_the_title()."</span>";
-		} elseif (is_singular('news')) {
+		} elseif (is_singular('story')) {
 			echo " <span class='sep'></span> ";
 			$post_object = get_field('news_page', 'option');
 			if( $post_object ){
@@ -919,13 +919,13 @@ function cptui_register_my_cpts_news() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "news", "with_front" => true ),
+		"rewrite" => array( "slug" => "story", "with_front" => true ),
 		"query_var" => true,
 		"menu_position" => 5,"menu_icon" => "dashicons-media-document",
 		"supports" => array( "title", "editor", "thumbnail", "page-attributes", "excerpt" ),		
 		"taxonomies" => array( "department", "category", "post_tag" ),
 			);
-	register_post_type( "news", $args );
+	register_post_type( "story", $args );
 // End of cptui_register_my_cpts_news()
 }
 add_action( 'init', 'cptui_register_my_cpts_press_release' );

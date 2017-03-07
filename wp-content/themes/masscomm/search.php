@@ -5,7 +5,7 @@
 		$type = $_GET['search-type'];
 		if($type == 'event') {
 			get_template_part('includes/search-event');
-		} elseif($type == 'news') {
+		} elseif($type == 'story') {
 			get_template_part('includes/search-news');
 		} elseif($type == 'press_release') {
 			get_template_part('includes/search-press_release');
