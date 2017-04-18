@@ -55,7 +55,7 @@ h2,.h2{padding-bottom:1rem;position:relative;margin-top:3rem;margin-bottom:0.8re
 h2:before,.h2:before{content:"";position:absolute;width:16.66rem;height:2px;bottom:0;left:0;background-color:#FECC0A;-webkit-transform:scaleX(.15);-ms-transform:scaleX(.15);-moz-transform:scaleX(.15);-o-transform:scaleX(.15);transform:scaleX(.15);-webkit-transform-origin:left;-ms-transform-origin:left;-moz-transform-origin:left;-o-transform-origin:left;transform-origin:left;-webkit-transition:all 0.75s ease-in-out 0.25s;-ms-transition:all 0.75s ease-in-out 0.25s;-moz-transition:all 0.75s ease-in-out 0.25s;-o-transition:all 0.75s ease-in-out 0.25s;transition:all 0.75s ease-in-out 0.25s}
 h3{font-size:1.15rem;margin-top:2rem;margin-bottom:0.625rem}
 h4{font-size:1rem;}
-.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:50%}
+.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:80%}
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-weight:600;line-height:1.5em;display:block;margin-bottom:1rem !important;color:#5F778F}
 p.wp-caption-text{padding:1rem;font-size:0.85em;line-height:1.8em;color:#5F778F}
 p{margin:0 0 1rem;}
