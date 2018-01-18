@@ -10,7 +10,6 @@ class IpRewrite
 
     // Found at https://www.cloudflare.com/ips/
     private $cf_ipv4 = array(
-        '199.27.128.0/21',
         '173.245.48.0/20',
         '103.21.244.0/22',
         '103.22.200.0/22',
@@ -50,6 +49,11 @@ class IpRewrite
     {
         if (!isset($_SERVER['HTTP_CF_CONNECTING_IP'])) {
             return false;
+        } else {
+            // Check if original ip has already been restored, e.g. by nginx - assume it was from cloudflare then
+            if ($_SERVER['REMOTE_ADDR'] === $_SERVER['HTTP_CF_CONNECTING_IP']) {
+                return true;
+            }
         }
 
         return $this->isCloudFlareIP();

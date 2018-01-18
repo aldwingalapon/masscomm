@@ -638,7 +638,7 @@ class nggdb
      *
      * @param integer $page start offset as page number (0,1,2,3,4...)
      * @param integer $limit the number of result
-     * @param bool $exclude do not show exluded images
+     * @param bool $exclude do not show excluded images
      * @param int $galleryId Only look for images with this gallery id, or in all galleries if id is 0
      * @param string $orderby is one of "id" (default, order by pid), "date" (order by exif date), sort (order by user sort order)
      * @deprecated
@@ -950,9 +950,9 @@ class nggdb
         // Generate SQL query
         $query = array();
         $query[] = "SELECT {$field}, SUBSTR({$field}, %d) AS 'i' FROM {$table}";
-        $query[] = "WHERE ({$field} LIKE '{$slug}-%%' AND CONVERT(SUBSTR({$field}, %d), SIGNED) BETWEEN 1 AND %d) OR {$field} = %s";
+        $query[] = "WHERE ({$field} LIKE %s AND CONVERT(SUBSTR({$field}, %d), SIGNED) BETWEEN 1 AND %d) OR {$field} = %s";
         $query[] = "ORDER BY CAST(i AS SIGNED INTEGER) DESC LIMIT 1";
-        $query = $wpdb->prepare(implode(" ", $query), strlen("{$slug}-")+1, strlen("{$slug}-")+1, PHP_INT_MAX, $slug);
+        $query = $wpdb->prepare(implode(" ", $query), strlen("{$slug}-")+1, $wpdb->esc_like("{$slug}-") . '%', strlen("{$slug}-")+1, PHP_INT_MAX, $slug);
 
         // If the above query returns a result, it means that the slug is already taken
         if (($last_slug = $wpdb->get_var($query))) {

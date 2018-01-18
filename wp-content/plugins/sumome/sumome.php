@@ -2,8 +2,8 @@
 /*
 Plugin Name: SumoMe
 Plugin URI: https://sumo.com
-Description: Free Tools to grow your email list from Sumo.com
-Version: 1.25
+Description: Free Tools to automate your site growth from Sumo.com
+Version: 1.27
 Author: SumoMe
 Author URI: https://www.Sumo.com
 */
