@@ -10,7 +10,7 @@
 	width: 100%;
 	height: 400px;
 	border: #ccc solid 1px;
-	margin: 20px 0;
+	margin: 0 0 20px 0;
 }
 /* fixes potential theme css conflict */
 .acf-map img {

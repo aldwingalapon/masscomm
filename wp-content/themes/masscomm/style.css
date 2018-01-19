@@ -324,13 +324,13 @@ header#main_header .bottom_header #primary_navigation ul > li.dropdown > ul > li
 .main_content .inner_content .article ol li:before {position: absolute;left: -1.25rem;content: counter(item) ". "; counter-increment: item; font-family: 'ProximaNova-Bold';font-size:16px;color:#516D58;}
 .main_content .inner_content .article ul:not(.ngg-breadcrumbs) li:before{position:absolute;content:"\25CF";display:block;width:10px;height:10px;top:0;left:-1.25rem;font-family: 'ProximaNova-Bold';font-size:16px;color:#516D58;}
 .main_content .inner_content .article ul.children:not(.ngg-breadcrumbs) li:before{position:absolute;content: "\2014";display:block;width:10px;height:10px;background:none;background-size:contain;top:0;left:-0.75rem;}
-.main_content .inner_content .article ul:not(.ngg-breadcrumbs) li, .main_content .inner_content .article ol li{position:relative;font-size:14px;line-height:2;margin-bottom:0.5rem;padding-left:0.75rem;color:#00314a;}
+.main_content .inner_content .article ul:not(.ngg-breadcrumbs) li, .main_content .inner_content .article ol li{position:relative;font-size:16px;line-height:2;margin-bottom:0.5rem;padding-left:0.75rem;color:#00314a;}
 .main_content .inner_content .article #wp_page_numbers li.page_info{}
 .main_content .inner_content .article #wp_page_numbers li:before{display:none;}
 .main_content .inner_content .aside{}
 .main_content#single-news .inner_content .article .article-title, .main_content#single-press_release .inner_content .article .article-title, .main_content#single-video .inner_content .article .article-title{margin-bottom:0.5rem;}
 .main_content#single-event .inner_content .article .article-title {margin-bottom: .5rem;}
-.main_content#single-event .inner_content .article .event-details{}
+.main_content#single-event .inner_content .article .event-details{margin-bottom:20px;}
 .main_content#single-event .inner_content .article .event-details h3{margin-bottom:0;}
 .main_content#single-event .inner_content .article .event-details > span{display:block;font-size: 0.9rem;line-height:1.4;}
 .main_content#single-event .inner_content .article .event-details > span.speaker{margin-bottom:1rem;}
